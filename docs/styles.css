@@ -498,7 +498,7 @@ h3 {
     }
 
     .task-input {
-        width: 95%; 
+        width: 100%; 
         margin-bottom: 8px;
         text-align: center;
     }
