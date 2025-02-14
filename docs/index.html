@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navitem">
+        <a class="navbar-brand" href="#plane">WORK DAY SCHEDULER 🕖</a>
+
+        <!-- <button class="navbar-toggler">☰</button> -->
+        <ul class="nav-links" id="navbarLinks">
+            <li><a href="#plane">Planner</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Work Day Scheduler</h1>
+        <p>A simple calendar app for scheduling your work day</p>
+        <h3>📅 <span id="current-date"></span></h3>
+        <button class="mode-toggle" onclick="toggleDarkMode()">Enable Dark Mode</button>
+    </div>
+
+    <!-- Planner -->
+    <div class="planner" id="plane">
+        <div class="date-header">
+            <button id="prev-day" class="nav-btn">&lt;</button>
+            <h3 class="nav-head">Hourly Task Manager<span id="current-date"></span></h3>
+            <button id="next-day" class="nav-btn">&gt;</button>
+        </div>
+
+        <div id="schedule-container"></div>
+
+    </div>
+    
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p id="footer-para">© <span id="current-year"></span> Work Day Scheduler. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/anjali-meena/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="http://github.com/anjalimeena09" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:anjalimeena09052003@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
 
